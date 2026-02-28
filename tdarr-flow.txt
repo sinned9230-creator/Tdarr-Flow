@@ -1,0 +1,271 @@
+{
+  "_id": "G6kV3WNwd",
+  "name": "burn-in subs,hevc,mkv",
+  "description": "burn-in subs,hevc,mkv",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "Input File",
+      "sourceRepo": "Community",
+      "pluginName": "inputFile",
+      "version": "1.0.0",
+      "fpEnabled": true,
+      "id": "gtZCtmY-l",
+      "position": {
+        "x": -744,
+        "y": -468
+      },
+      "inputsDB": {
+        "fileAccessChecks": "true",
+        "pauseNodeIfAccessChecksFail": "false"
+      }
+    },
+    {
+      "name": "HandBrake final run",
+      "sourceRepo": "Community",
+      "pluginName": "handbrakeCustomArguments",
+      "version": "2.0.0",
+      "id": "tXnSt4uta",
+      "position": {
+        "x": -156,
+        "y": -96
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "useJsonPreset": "true",
+        "jsonPreset": "{\n  \"PresetList\": [\n    {\n      \"AlignAVStart\": false,\n      \"AudioCopyMask\": [\n        \"copy:aac\"\n      ],\n      \"AudioEncoderFallback\": \"av_aac\",\n      \"AudioLanguageList\": [\n        \"dan\",\n        \"eng\"\n      ],\n      \"AudioList\": [\n        {\n          \"AudioBitrate\": 512,\n          \"AudioCompressionLevel\": 0,\n          \"AudioEncoder\": \"copy:aac\",\n          \"AudioMixdown\": \"5point1\",\n          \"AudioNormalizeMixLevel\": false,\n          \"AudioSamplerate\": \"auto\",\n          \"AudioTrackQualityEnable\": false,\n          \"AudioTrackQuality\": -1,\n          \"AudioTrackGainSlider\": 0,\n          \"AudioTrackDRCSlider\": 0\n        }\n      ],\n      \"AudioSecondaryEncoderMode\": true,\n      \"AudioTrackSelectionBehavior\": \"first\",\n      \"AudioTrackNamePassthru\": false,\n      \"AudioAutomaticNamingBehavior\": true,\n      \"ChapterMarkers\": true,\n      \"ChildrenArray\": [],\n      \"Default\": false,\n      \"FileFormat\": \"av_mkv\",\n      \"Folder\": false,\n      \"FolderOpen\": false,\n      \"Optimize\": false,\n      \"Mp4iPodCompatible\": false,\n      \"PictureCropMode\": 0,\n      \"PictureBottomCrop\": 0,\n      \"PictureLeftCrop\": 0,\n      \"PictureRightCrop\": 0,\n      \"PictureTopCrop\": 0,\n      \"PictureDARWidth\": 0,\n      \"PictureDeblockPreset\": \"off\",\n      \"PictureDeblockTune\": \"medium\",\n      \"PictureDeblockCustom\": \"strength=strong:thresh=20:blocksize=8\",\n      \"PictureDeinterlaceFilter\": \"off\",\n      \"PictureCombDetectPreset\": \"off\",\n      \"PictureCombDetectCustom\": \"\",\n      \"PictureDenoiseCustom\": \"\",\n      \"PictureDenoiseFilter\": \"off\",\n      \"PictureSharpenCustom\": \"\",\n      \"PictureSharpenFilter\": \"off\",\n      \"PictureSharpenPreset\": \"medium\",\n      \"PictureSharpenTune\": \"none\",\n      \"PictureDetelecine\": \"off\",\n      \"PictureDetelecineCustom\": \"\",\n      \"PictureColorspacePreset\": \"off\",\n      \"PictureColorspaceCustom\": \"\",\n      \"PictureChromaSmoothPreset\": \"off\",\n      \"PictureChromaSmoothTune\": \"none\",\n      \"PictureChromaSmoothCustom\": \"\",\n      \"PictureItuPAR\": false,\n      \"PictureKeepRatio\": true,\n      \"PicturePAR\": \"auto\",\n      \"PicturePARWidth\": 0,\n      \"PicturePARHeight\": 0,\n      \"PictureWidth\": 1920,\n      \"PictureHeight\": 1080,\n      \"PictureUseMaximumSize\": true,\n      \"PictureAllowUpscaling\": false,\n      \"PictureForceHeight\": 0,\n      \"PictureForceWidth\": 0,\n      \"PicturePadMode\": \"none\",\n      \"PicturePadTop\": 0,\n      \"PicturePadBottom\": 0,\n      \"PicturePadLeft\": 0,\n      \"PicturePadRight\": 0,\n      \"PicturePadColor\": \"black\",\n      \"PresetDescription\": \"\",\n      \"PresetName\": \"plex 1080p\",\n      \"Type\": 1,\n      \"SubtitleAddCC\": false,\n      \"SubtitleAddForeignAudioSearch\": false,\n      \"SubtitleAddForeignAudioSubtitle\": false,\n      \"SubtitleBurnBehavior\": \"first\",\n      \"SubtitleBurnBDSub\": false,\n      \"SubtitleBurnDVDSub\": false,\n      \"SubtitleLanguageList\": [\n        \"dan\"\n      ],\n      \"SubtitleTrackSelectionBehavior\": \"first\",\n      \"SubtitleTrackNamePassthru\": true,\n      \"VideoAvgBitrate\": 0,\n      \"VideoColorRange\": \"auto\",\n      \"VideoColorMatrixCode\": 0,\n      \"VideoEncoder\": \"x265\",\n      \"VideoFramerateMode\": \"cfr\",\n      \"VideoGrayScale\": false,\n      \"VideoScaler\": \"swscale\",\n      \"VideoPreset\": \"veryfast\",\n      \"VideoTune\": \"\",\n      \"VideoProfile\": \"auto\",\n      \"VideoLevel\": \"auto\",\n      \"VideoOptionExtra\": \"\",\n      \"VideoQualityType\": 2,\n      \"VideoQualitySlider\": 21.5,\n      \"VideoMultiPass\": false,\n      \"VideoTurboMultiPass\": false,\n      \"VideoPasshtruHDRDynamicMetadata\": \"all\",\n      \"x264UseAdvancedOptions\": false,\n      \"PresetDisabled\": false,\n      \"MetadataPassthru\": true\n    }\n  ],\n  \"VersionMajor\": 67,\n  \"VersionMicro\": 0,\n  \"VersionMinor\": 0\n}"
+      }
+    },
+    {
+      "name": "Reorder Streams",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRorderStreams",
+      "version": "1.0.0",
+      "id": "FoeNoDuyK",
+      "position": {
+        "x": -204,
+        "y": -216
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "languages": "dan,eng"
+      }
+    },
+    {
+      "name": "Move To Directory",
+      "sourceRepo": "Community",
+      "pluginName": "moveToDirectory",
+      "version": "2.0.0",
+      "id": "CVXnw1SAC",
+      "position": {
+        "x": 24,
+        "y": 84
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "keepRelativePath": "true",
+        "outputDirectory": "/media/film_output"
+      }
+    },
+    {
+      "name": "Compare File Size Ratio Live",
+      "sourceRepo": "Community",
+      "pluginName": "compareFileSizeRatioLive",
+      "version": "1.0.0",
+      "id": "XjoQMXGFz",
+      "position": {
+        "x": -708,
+        "y": -120
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "thresholdPerc": "200",
+        "compareMethod": "currentSize",
+        "checkDelaySeconds": "10"
+      }
+    },
+    {
+      "name": "Begin Command",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "nwOt_E5ra",
+      "position": {
+        "x": -492,
+        "y": -60
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Check subs",
+      "sourceRepo": "Community",
+      "pluginName": "checkStreamProperty",
+      "version": "1.0.0",
+      "id": "RcDR3Mns5",
+      "position": {
+        "x": -420,
+        "y": -468
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "streamType": "subtitle",
+        "valuesToMatch": "dan,da",
+        "condition": "includes",
+        "propertyToCheck": "tags.language"
+      }
+    },
+    {
+      "name": "Add To Skiplist",
+      "sourceRepo": "Community",
+      "pluginName": "processedAdd",
+      "version": "1.0.0",
+      "id": "68qoMXulC",
+      "position": {
+        "x": 36,
+        "y": -48
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "checkType": "fileName"
+      }
+    },
+    {
+      "name": "Check Skiplist",
+      "sourceRepo": "Community",
+      "pluginName": "processedCheck",
+      "version": "1.0.0",
+      "id": "Qxoy7_QXW",
+      "position": {
+        "x": -708,
+        "y": -300
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "checkType": "fileName"
+      }
+    },
+    {
+      "name": "ffmpeg -i input.mkv -i input.srt \\ -map 0:v -map 0:a -map 1:0 \\ -c copy \\ -c:s srt \\ -metadata:s:s:0 language=dan,da \\ output.mkv",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "id": "2lH0To2x2",
+      "position": {
+        "x": 0,
+        "y": -456
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "inputArguments": "{{inputFile}}",
+        "outputArguments": "{{outputFile}}"
+      }
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "FoeNoDuyK",
+      "sourceHandle": "1",
+      "target": "tXnSt4uta",
+      "targetHandle": null,
+      "id": "SE2qa4l6z"
+    },
+    {
+      "source": "XjoQMXGFz",
+      "sourceHandle": "err1",
+      "target": "pA9Web3IL",
+      "targetHandle": null,
+      "id": "BHwz78Nv5"
+    },
+    {
+      "source": "XjoQMXGFz",
+      "sourceHandle": "1",
+      "target": "nwOt_E5ra",
+      "targetHandle": null,
+      "id": "v_GbboqPG"
+    },
+    {
+      "source": "nwOt_E5ra",
+      "sourceHandle": "1",
+      "target": "RcDR3Mns5",
+      "targetHandle": null,
+      "id": "B-YBDET3i"
+    },
+    {
+      "source": "RcDR3Mns5",
+      "sourceHandle": "1",
+      "target": "FoeNoDuyK",
+      "targetHandle": null,
+      "id": "nEELSLSXg"
+    },
+    {
+      "source": "Qxoy7_QXW",
+      "sourceHandle": "1",
+      "target": "XjoQMXGFz",
+      "targetHandle": null,
+      "id": "0r7gXlRnH"
+    },
+    {
+      "source": "gtZCtmY-l",
+      "sourceHandle": "1",
+      "target": "Qxoy7_QXW",
+      "targetHandle": null,
+      "id": "nqMpFbpIp"
+    },
+    {
+      "source": "Qxoy7_QXW",
+      "sourceHandle": "2",
+      "target": "Yu1bO2zk0",
+      "targetHandle": null,
+      "id": "Ug-Giw-_H"
+    },
+    {
+      "source": "RcDR3Mns5",
+      "sourceHandle": "err1",
+      "target": "Yu1bO2zk0",
+      "targetHandle": null,
+      "id": "lJGpLZOFd"
+    },
+    {
+      "source": "RcDR3Mns5",
+      "sourceHandle": "2",
+      "target": "2lH0To2x2",
+      "targetHandle": null,
+      "id": "ZYa5ZewI0"
+    },
+    {
+      "source": "2lH0To2x2",
+      "sourceHandle": "1",
+      "target": "FoeNoDuyK",
+      "targetHandle": null,
+      "id": "m8S0A6Z5T"
+    },
+    {
+      "source": "2lH0To2x2",
+      "sourceHandle": "err1",
+      "target": "68qoMXulC",
+      "targetHandle": null,
+      "id": "2oyrZyDuN"
+    },
+    {
+      "source": "68qoMXulC",
+      "sourceHandle": "1",
+      "target": "CVXnw1SAC",
+      "targetHandle": null,
+      "id": "2NZRVG3YR"
+    },
+    {
+      "source": "CVXnw1SAC",
+      "sourceHandle": "1",
+      "target": "mjrU7E40f",
+      "targetHandle": null,
+      "id": "PUCmjC5Xs"
+    },
+    {
+      "source": "tXnSt4uta",
+      "sourceHandle": "1",
+      "target": "68qoMXulC",
+      "targetHandle": null,
+      "id": "gu4WrtzXM"
+    }
+  ]
+}
